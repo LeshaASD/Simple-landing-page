@@ -1,0 +1,61 @@
+=box-shadow
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(118,199,192,1)
+	-moz-box-shadow: 0px 5px 5px 0px rgba(118,199,192,1)
+	box-shadow: 0px 5px 5px 0px rgba(118,199,192,1)
+
+=title($width, $height)
+	width: $width
+	height: $height
+
+=btn
+	width: 200px
+	height: 52px
+	border-radius: 3px
+	border: 1px solid transparent
+
+=btn-link
+	width: 70%
+	height: 52px
+	border-radius: 3px
+	border: 1px solid transparent
+	background: $button-blue
+	position: absolute
+	top: 90%
+	left: 50%
+	margin-left: -35%
+	text-transform: uppercase
+	text-decoration: none
+	color: white
+	font:
+		size: 20px
+		weight: 600
+		family: "Open Sans" 
+	line-height: 52px
+	text-align: center
+
+=item
+	width: 23%
+	border-radius: 10px
+	padding-top: 103px
+	position: relative
+	box-shadow: 0px 5px 5px 0px #ccc
+	p 
+		font:
+			size: 13px
+			weight: normal
+			family: "Open Sans"
+		color: $text-color
+		margin: 32px 5%
+		text-align: center
+		margin-bottom: 70px
+
+
+=tablet
+	@media screen and (max-width: 960px)
+		@content
+=big-phones
+	@media screen and (max-width: 750px)
+		@content
+=phone
+	@media screen and (max-width: 600px)
+		@content
